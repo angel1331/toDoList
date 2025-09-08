@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.todo-list,
+.js-todo-list {
+  display: grid;
+  grid-template-columns: 220px 220px 200px;
+  align-items: center;
+}
+
+.js-name-input {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.js-due-date-input {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.add-button {
+  background-color: green;
+  border: 0;
+  color: white;
+  width: 150px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  opacity: 75%;
+}
+
+.add-button:active {
+  opacity: 50%;
+}
+
+.delete-button {
+  background-color: red;
+  border: 0;
+  color: white;
+  width: 150px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.delete-button:hover {
+  opacity: 75%;
+}
+
+.delete-button:active {
+  opacity: 50%;
+}
+
+.name,
+.date {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+.delete-element {
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .todo-list,
+  .js-todo-list {
+    grid-template-columns: 130px 130px 100px;
+  }
+
+  .add-button {
+    width: auto;
+    
+  }
+
+  .js-name-input,
+  .js-due-date-input {
+    width: auto;
+  }
+
+  .delete-button {
+    width: 100px;
+  }
+}
